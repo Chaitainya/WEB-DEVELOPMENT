@@ -1,0 +1,27 @@
+CSS Selectors
+
+1. Inline
+2. Internal
+3. External
+
+Inline: If we want apply css for only one element we go for Inline css.
+
+Internal: If we want to update the css inside the file we go for Internal CSS.
+
+External: If we want to reuse our css between multiple pages then we can go for External CSS.
+
+Colors:
+
+Color Psychology
+https://www.w3schools.com/colors/colors_psychology.asp
+
+Color Picker
+https://www.w3schools.com/colors/colors_picker.asp
+
+
+
+Background:
+
+ Css provides different background properties for color, Image, Text etc.
+
+ 

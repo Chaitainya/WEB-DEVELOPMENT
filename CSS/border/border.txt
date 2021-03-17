@@ -1,0 +1,5 @@
+Border:
+
+A border is used to highlight some text to grab the attention of the audience in a web page.
+
+CSS provides different types of border properties to work with borders.
