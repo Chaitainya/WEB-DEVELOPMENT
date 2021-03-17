@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link rel="stylesheet" href="stylemain.css">
+
+<title>
+
+ Wireless Router
+</title>
+
+<script type="text/javascript">
+
+var ModemVer="DIR-600M";
+var HardwareVer="C1";
+var FirmwareVer="3.04";
+function onlogin() {
+ if (document.test.username.value.length <= 0) {
+  alert("Username cannot be empty. Please try it again!");
+  document.test.username.focus();
+  return false;
+ }
+ return true;
+}
+function frmLoad() {
+ document.test.username.focus();
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="login">
+
+<table class="productInfo" border="0" cellpadding="0" cellspacing="0" width="842">
+
+ <tr>
+
+  <td align="left" height="30" bgcolor="#404343" colspan="1">&nbsp;&nbsp;&nbsp;&nbsp;Product Page:
+<script>
+
+  document.write(ModemVer);
+</script>
+
+  </td>
+
+  <td align="right" height="30" bgcolor="#404343" colspan="2">Hardware version:
+<script>
+
+  document.write(HardwareVer);
+</script>
+
+&nbsp;&nbsp;&nbsp;&nbsp;Firmware Version:
+<script>
+
+  document.write(FirmwareVer);
+</script>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  </td>
+
+ </tr>
+
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="842">
+
+ <tr background="head_02.gif">
+
+  <td align="left"><a href="http://www.dlink.com.tw/" target="_blank"><img src="head_01.gif" border="0" width="162"></a></td>
+
+  <td background="head_02.gif" width="584"></td>
+
+  <td align="right"><img src="head_03.gif" width="96"></td>
+
+ </tr>
+
+</table>
+
+<form action="login.cgi" method="post" name="test" autocomplete="off">
+
+ <div class="login_box">
+
+  <p class="letterBg">
+
+   Login
+  </p>
+
+  <table class="login_table">
+
+   <tr>
+
+    <td>
+
+     Username:&nbsp;
+    </td>
+
+    <td>
+
+     <input style="width: 150px;" type="text" id="username" name="username"
+
+     value=
+Admin
+>
+    </td>
+
+   </tr>
+
+   <tr>
+
+    <td>
+
+     Password:&nbsp;
+    </td>
+
+    <td>
+
+     <input style="width: 150px;" name="password" id="password" type="password">
+
+    </td>
+
+   </tr>
+
+   <tr>
+
+    <td colspan="2">
+
+     <div class="login_btn">
+
+      <input id="loginBtn" onclick="return onlogin()" type="submit" value="Login"
+      class="link_bg">
+
+      <input type="hidden" name="submit.htm?login.htm" value="Send">
+
+     </div>
+
+    </td>
+
+   </tr>
+
+  </table>
+
+ </div>
+
+</form>
+
+<div class="loginBottom">
+
+</div>
+
+<div class="copywright">
+
+Copyright &copy; 2008-2013 D-Link Systems, Inc.
+</div>
+
+</div>
+
+</body>
+
+</html>
+
+
+

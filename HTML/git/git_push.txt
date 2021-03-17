@@ -1,0 +1,18 @@
+git clone <repo-url>
+
+git status
+
+git add .
+
+git status
+
+git commit -m "your message"
+
+/*   git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"  */ For the first time users
+
+git push
+
+/* git log
+git pull --rebase main
+git push

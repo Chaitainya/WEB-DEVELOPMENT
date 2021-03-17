@@ -1,0 +1,38 @@
+<!-- Implement a registration page and display the details on the UI -->
+
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <form>
+
+            <label> Firstname: </label><input type="text" id="first"></input><br><br>
+            <label> Lastname: </label><input type="text" id="last"></input><br><br>
+            <label> Create a username: </label><input type="text" id="user"></input><br><br>
+            <label> Enter your email: </label><input type="text" id="email"></input><br><br>
+            <label> Create a password: </label><input type="text" id="pass"></input><br><br>
+            <label> Confirm password: </label><input type="pass" id="passs"></input><br><br>
+
+            <button onclick="details()"> Submit </button>
+
+        </form>
+
+        <script>
+
+            function details()
+            {
+
+                var first = document.getElementById("first").value;
+                var last = document.getElementById("last").value;
+                var user = document.getElementById("user").value;
+                var email = document.getElementById("email").value;
+                var pass = document.getElementById("pass").value;
+                var passs = document.getElementById("passs").value;
+
+                document.write("Your Firstname is " + first + " lastname is " + last + " username: " + user + " email: " + email + " password: " + pass);
+            }
+        </script>
+    </body>
+</html>

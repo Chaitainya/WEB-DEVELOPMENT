@@ -1,0 +1,60 @@
+<html>
+
+<head>
+
+    <title>Login</title>
+    <style>
+
+        body{
+
+                margin: 20x;
+                padding: 30px 30px 30px 30px
+
+        }
+
+    </style>
+
+</head>
+
+<body style="background-color: rebeccapurple">
+
+    <h1 style="text-align: center; background-color: purple; color: white">SPACE PETROL DELTA</h1>
+
+    <h2 style="color:seashell"> JOIN S.P.D </h2>
+
+    <form style="font-size:xx-large">
+
+        <label>Full Name </label> <input type="text" id="fullname"></input> <br> <br>
+        <label>User Name </label> <input type="text" id="username"></input> <br><br>
+        <label>Email Id </label> <input type="text" id="email"></input> <br> <br>
+        <label>Create A Password </label> <input type="text" id="password"></input> <br> <br>
+        <label>Confirm Password </label> <input type="password" id="password"></input> <br><br>
+
+        <button onClick="myFunc()" style="margin-left: 100px; background-color:lawngreen; font-size: 25px;">Signup</button>
+    </form>
+
+    <script>
+
+        function myFunc(){
+
+            var password = document.getElementById("password").value;
+            var fullname = document.getElementById("fullname").value;
+            var username = document.getElementById("username").value;
+            if(password.length < 8)
+            {
+                alert("Password must be atleast 8 characters or more");
+            }
+            else
+            {
+                alert("Thank You For Joining S.P.D Mr. " + fullname + '\n' + '\n' + "Your UserName is " + username + '\n' + "Your Password is " + password + '\n' + "Next Time Please Use Above UserName And Password To Signin" + '\n' + '\n' + "Please Click On Ok To Redirect");
+
+            }
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>

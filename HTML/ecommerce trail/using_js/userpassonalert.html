@@ -1,0 +1,30 @@
+<!-- Create a username and pass fields and display the username and password in alert -->
+
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <form>
+
+            <label> Username: </label><input type="text" id="user"></input><br><br>
+            <label> Password: </label><input type="password" id="pass"></input><br><br>
+
+            <button onclick="alertt()"> Submit </button>
+
+        </form>
+
+        <script>
+
+            function alertt()
+            {
+
+                var username = document.getElementById("user").value;
+                var password = document.getElementById("pass").value;
+
+                alert("username is " + username + " and password is " + password);
+            }
+        </script>
+    </body>
+</html>

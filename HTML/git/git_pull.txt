@@ -1,0 +1,12 @@
+git pull --rebase origin main or master
+
+git log
+
+--> Open another terminal
+
+git push -u origin main or master 
+
+// If it is master at pull it is also master in push
+// If it is main at pull it is also main in push
+
+thats it once check Github

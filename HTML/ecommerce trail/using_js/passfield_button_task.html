@@ -1,0 +1,31 @@
+<!-- Create a Password Field and a Button, once the user enters the password and clicks on submit, check whether the password is
+atleast 5 chars or not if it is 5 chars, displkay "Password Accepted" else "Password should be atleast 5 chars." -->
+
+<html>
+    <head>
+
+    </head>
+
+    <body>
+
+        <label>Password</label><input type="text" id="password"><br><br>
+        <button onClick="passWord()" style="margin-left:100px; background-color:greenyellow; font-size: 25px;">Submit</button>
+
+        <script>
+
+            function passWord(){
+
+            var password = document.getElementById("password").value;
+
+            if(password.length < 5)
+            {
+                alert("Password Must be 8 Characters");
+            }
+            else
+            {
+                alert("Password Accepted");
+            }
+        }
+        </script>
+    </body>
+</html>

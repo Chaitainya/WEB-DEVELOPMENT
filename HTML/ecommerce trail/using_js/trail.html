@@ -1,0 +1,37 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <form>
+
+        <lable>UserName</lable><input type="text" id="username"><br><br>
+        <label>Password</label><input type="password" id="password"><br><br>
+        <button onClick="myFunc()" style="margin-left: 100px; background-color:lawngreen; font-size: 25px;">Signup</button>
+        <script>
+
+            function myFunc(){
+    
+                var password = document.getElementById("password").value;
+                var username = document.getElementById("username").value;
+                if(password.length < 8)
+                {
+                    alert("Password must be atleast 8 characters or more");
+                }
+                else
+                {
+                    alert("Your UserName is " + username + '\n' + "Your Password is " + password + '\n' + "Next Time Please Use Above UserName And Password To Signin");
+    
+                }
+            }
+    
+    
+        </script>
+    </form>
+
+</body>
+
+</html>
