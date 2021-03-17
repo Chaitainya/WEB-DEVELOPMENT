@@ -1,0 +1,14 @@
+For Loop:
+
+For loop is same as while loop with a difference in syntax.
+
+for(initialization; test-condition; inc/dec){
+
+}
+
+for(assignment; condition; inc/dec)
+
+there are two types of increment values,
+
+1. Pre-increment (i--)
+2. Post-increment (i++)

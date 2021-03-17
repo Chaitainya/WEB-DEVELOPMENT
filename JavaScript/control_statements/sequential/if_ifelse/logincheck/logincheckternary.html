@@ -1,0 +1,33 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <form>
+
+            <label>username: </label><input type="text" id="user"></input><br><br>
+            <label>password: </label><input type="password" id="pass"></input><br><br>
+
+            <button onclick="detailsCheck()"> submit </button>
+
+        </form>
+        <script>
+
+            function detailsCheck()
+            {
+
+                var username = document.getElementById("user").value;
+                var password = document.getElementById("pass").value;
+
+                var usercheck = username == "Leon" ? true : false;
+                var passcheck = password == "Leon123" ? true : false;
+
+                usercheck == passcheck ? alert("Login Successful") : alert("login Unsuccessful");
+
+            }
+
+        </script>
+
+    </body>
+</html>

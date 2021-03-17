@@ -1,0 +1,43 @@
+// In programming we use a variable to store data temporarily.
+
+let name1;
+console.log(name1);
+
+let name2 = 'Leon';
+console.log(name2);
+
+// Variable is cannot be a reserved keyword.
+// JavaScript has reserved keywords, 'let' is one of them. We also have if, else, var and so on.
+
+// eg:
+
+// let if = 'Leon';
+// console.log('if'); // So this is syntax error
+
+// Variable names should be meaningfull & Discriptive names.
+// Cannot start with a number (1name)
+// They connot contain a space or hyphen (-)
+
+let firstName
+// Cannel Notation
+// The first letter of the first word should be lower case,
+// first letter of the next word should be capital.
+
+
+// Variables are case-sensitive
+// eg:
+
+let firstName;  //  Correct
+let FirstName;  //  Wrong
+
+// If you wanna declare multiple variables there are two ways to do this
+// You can declare them on one line and seperate them using a comma, so first name and then last name,
+
+// eg:
+// let firstName = 'Leon', lastName = 'Rehan';
+
+// or
+
+// let firstName = "Leon";
+// lastName = "Rehan";
+

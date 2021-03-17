@@ -1,0 +1,14 @@
+3. Jump
+
+1. break
+2. continue &
+3. return
+
+
+Break: Break is used to terminate a block
+ eg: Switch Case
+
+Continue: Continue is used to skip an iteration
+
+Return: Return is to terminate a function execution
+

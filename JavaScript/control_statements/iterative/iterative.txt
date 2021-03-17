@@ -1,0 +1,7 @@
+2. Iterative
+
+We have 3 Iterative Statements,
+
+1. While
+2. Do - While &
+3. for

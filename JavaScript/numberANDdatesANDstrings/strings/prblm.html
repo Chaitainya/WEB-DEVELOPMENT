@@ -1,0 +1,50 @@
+<!-- Create a text field that trims the spaces before and after the emailid.
+
+Accept uppercase / lower case / combination both
+
+add @gmail.com if the user does not provide it.
+
+don't add @gmail.com if the user provides a different domain. -->
+
+<!-- To trim the spaces, we got the pre-defined function called " 'trim' function " -->
+
+
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <form>
+
+            <input placeholder="Email ID" type="text" id="mail"><br><br>
+
+            <button onclick="emailCheck()"> signin </button>
+
+            <h1 id="message"></h1>
+
+        </form>
+        <script>
+
+            function emailCheck()
+            {
+                event.preventDefault();
+                var mail = document.getElementById("mail").value;
+
+                mail = mail.trim();
+
+                if(mail.includes('@gmail.com'))
+                {
+                    document.getElementById("message").innerHTML = mail;
+                }
+                else
+                {
+                    mail = mail.concat('@gmail.com');
+                    document.getElementById("message").innerHTML = mail;
+                }
+
+
+            }
+        </script>
+    </body>
+</html>

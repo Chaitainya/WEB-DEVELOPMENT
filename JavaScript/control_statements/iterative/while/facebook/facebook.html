@@ -1,0 +1,56 @@
+<!-- Facebook has users, each user can have a list of messages, display
+the messages on UI using while loop. -->
+
+<!-- Whenever we want to work with arrays, whenever we want to itererate.
+We can use while or for. Do-While can also use but in a different cases -->
+
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <ul id="messageList">
+
+        </ul>
+
+        <script>
+
+var messages = [
+    {
+        sender: "Leon",
+        message: "Hello! How are you?",
+        time: "10:45PM"
+    },
+    {
+        sender: "Rehan",
+        message: "Hey dude, Whatsup?",
+        time: "4:20PM"
+    },
+    {
+        sender: "Thomas",
+        message: "Hell yeah, you're there.",
+        time: "9:45PM"
+    },
+    {
+        sender: "Sayda",
+        message: "Assalam Valaikum",
+        time: "5:00AM"
+    }
+];
+
+var index = 0;
+
+var ul = document.getElementById("messageList");
+
+while(index < messages.length){
+
+    var currentmsg = messages[index];
+
+    ul.innerHTML = ul.innerHTML + "<li>" + currentmsg.sender + ":    " + currentmsg.message + "    " + currentmsg.time + "<li>";
+    index++;
+}
+
+        </script>
+    </body>
+</html>

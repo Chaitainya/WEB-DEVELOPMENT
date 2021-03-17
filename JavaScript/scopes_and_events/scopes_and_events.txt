@@ -1,0 +1,33 @@
+Scopes:
+
+In JS, there are 2 types of scopes.
+
+1. Local Scope: Local variables and local functions come under local scopes.
+2. Global Scope: Global variables and just functions will come under global scopes.
+
+note:
+
+"""It is advised to use local scope more than global scope."""
+
+
+
+
+
+
+Events:
+
+Any action is considered to be an event.
+
+
+eg: clicking on a button, selecting an option from a drop down list,
+    entering data into a text field, moving the cursor on to the image...
+
+
+whenever an event occurs, then there should be an event handler.
+
+Event Handlers:
+
+Event handlers are nothing but the function that handles the event.
+
+We've different types of events provided by JS,
+onClick, onChange, ondblclick, onmouseover, onmouseout, onprint, ondrag..

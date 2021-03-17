@@ -1,0 +1,12 @@
+Array:
+
+An Array is a linear data structure which is used to store a list of elements (data) in a sequential order..
+
+In JavaScript we create Arrays using the following syntax,
+
+var array = [];
+
+Array index starts from zero.
+
+In JavaScript, Array can store different types of elements.
+

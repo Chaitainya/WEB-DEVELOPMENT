@@ -1,0 +1,4 @@
+Firs Class Function:
+
+If a function accepts another function as an argument, then it is known as
+"First Class Function."

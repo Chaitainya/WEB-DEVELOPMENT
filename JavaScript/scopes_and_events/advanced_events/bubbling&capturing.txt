@@ -1,0 +1,3 @@
+Event Bubbling happens from child to parent.
+
+and Event Capturing happens from parent to child.

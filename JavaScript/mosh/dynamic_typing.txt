@@ -1,0 +1,7 @@
+We have two types of programming languages
+
+Static(Statically-typed) Languages &
+--> In static languages when we declare a variable is set and it cannot be changed in the future.
+
+Dynamic(Dynamically-types) Languages
+--> In dynamic language like javascript the type of the variable can change one type.

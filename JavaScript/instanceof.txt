@@ -1,0 +1,3 @@
+instanceof
+
+This operator is used to know whether a particular object belongs to a function constructor or not.

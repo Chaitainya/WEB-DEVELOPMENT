@@ -1,0 +1,18 @@
+do-while:
+
+syntax:
+
+do{
+
+    //code
+
+}while(test-condition)
+
+
+difference between while and do-while is,
+
+In do-while, the test condition will be checked only after the execution of do block,
+if the condition is true, then control goes back to do block again.
+
+In while, the test condition will be checked first, then based on the result,
+the control may go to the block or it skips the block.

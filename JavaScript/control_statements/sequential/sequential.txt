@@ -1,0 +1,10 @@
+1. Sequential
+
+We have 3 sequential Statements,
+
+1. if
+2. if-else &
+3. switch
+
+      In Sequenetial Statements. the control traverse from top to bottom.
+There will never be any change in the order of the excution.

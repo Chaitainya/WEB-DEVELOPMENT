@@ -1,0 +1,16 @@
+Function Constructor:
+
+A Function Cunstructor is used to create a template or wire frame which is used to create multiple objects of same type.
+
+Function constructor is used to create objects of same page.
+
+syntax:
+
+    function Function_name(parameters)
+    {
+        // declarations
+    }
+
+    The difference between function constructor and function is,
+    function constructor should start with uppercase where as function
+    should start with lowercase.

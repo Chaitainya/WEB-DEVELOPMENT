@@ -1,0 +1,17 @@
+Switch Case:
+
+Swith Case is used when we want to provide multiple options to the end user.
+
+Syntax:
+
+switch(choice){
+
+    case case_value1 : // code
+    case case_value2 : // code
+
+
+
+    case case_valuen : // code
+
+    default : //code
+}

@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title> Marks </title>
+    </head>
+    <body>
+        <h1> Marks using Switch statements </h1>
+
+        <script>
+            var marks = 60; // change the values to see the change
+            switch(true)
+            { // case is a switch keyword
+                case marks > 90 /*in here we will pass the condition*/ : result = "A Grade"; break;
+                case marks > 75 : result = "B Grade"; break;
+                case marks > 60 : result = "C Grade"; break;
+                default : result = "Fail";
+            }
+            document.write(result);
+
+            // If we don't use breaks directly fail will print
+            // So using break; in switch is must and should
+            
+        </script>
+    </body>
+</html>

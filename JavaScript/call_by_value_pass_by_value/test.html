@@ -1,0 +1,19 @@
+<script>
+
+var a = 10, b = 20; // 1st step
+
+function f1(x, y)
+{
+    console.log("x", x); // 10 // 3rd step
+    console.log("y", y); // 20 // 4th step
+
+    x = 90; // x = 90 // 5th step
+    y = 100; // y = 100 // 6th step
+}
+
+f1(a, b); // f1(10, 20); 2nd step
+
+console.log(a); // 10 // 7th step
+console.log(b); // 20 // 8th step
+
+</script>

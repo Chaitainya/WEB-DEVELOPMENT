@@ -1,0 +1,5 @@
+Async operations:
+
+An 'Async Operation' is used tp execute the application code simultaneously.
+
+We can load a file and use it in JS by using XMLHttpRequest Object.

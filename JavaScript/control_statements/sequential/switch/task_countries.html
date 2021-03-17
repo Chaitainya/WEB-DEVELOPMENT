@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+
+        <select id="country" onchange="count()">
+
+            <option value="ind">India</option>
+            <option value="nam">North America</option>
+            <option value="sam">South America</option>
+            <option value="chi">China</option>
+            <option value="aus">Australia</option>
+
+        </select>
+
+        <h1 id="countryinfo"></h1>
+
+        <script>
+
+            count();
+
+            function count()
+            {
+
+            var country = document.getElementById("country").value;
+
+            switch(country)
+            {
+                case "ind": document.getElementById("countryinfo").innerHTML="India is one of the asian country, India is surrounded by many countries, Indian has many coltures, tradations, etc";break;
+                case "nam": document.getElementById("countryinfo").innerHTML="North America is located in North, Most of the north is located in Snow, Very sexy place to live";break;
+                case "sam": document.getElementById("countryinfo").innerHTML="South is the best tourism place in earth hehe, my favorite place is miami, brazil, cuba and Real de Catorce";break;
+                case "chi": document.getElementById("countryinfo").innerHTML="Huff Australia I donno anything aboliaut Austra";break;
+                case "aus": document.getElementById("countryinfo").innerHTML="Huff Australia I donno anything aboliaut Austra";break;
+            }
+        }
+        </script>
+    </body>
+</html>

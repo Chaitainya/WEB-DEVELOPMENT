@@ -1,0 +1,22 @@
+Object:
+
+An Object is a collection of key value pairs.
+
+Whenever we wan to store more than one details of an entity, then we use Object.
+
+Syntax:
+
+var obj = {
+    key: value
+}
+
+note: Keys musts be strings and unique,
+      Values can be of any datatype and can also duplicate.
+
+var user = {
+    username: "Chaitainya",
+    password: "Chaitu123",
+    email: "chaitainyaa@gmail.com"
+}
+
+console.log(user);

@@ -1,0 +1,33 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <form>
+
+            <lable> Username: </lable><input type="text" id="username"> <br><br>
+            <lable> Password: </lable><input type="password" id="password"> <br><br>
+
+            <button onclick="validate()"> Submit</button>
+
+        </form>
+
+            <script>
+
+                function validate(){
+
+                    event.preventDefault();
+
+                    var username = document.getElementById("username").value;
+                    var password = document.getElementById("password").value;
+
+                    var usernamecheck = username == "Leon" ? true : false;
+                    var passwordcheck = password == "leon123" ? true : false;
+
+                    usernamecheck && passwordcheck ? alert("Login Successful") : alert("Invalid Login"); // && AND
+
+            }
+            </script>
+    </body>
+</html>

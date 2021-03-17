@@ -1,0 +1,42 @@
+Algorithm: A process or set of rules to be followed in calculations or other problem-solving operations, especially by a computer.
+or step by step procedure to solve a problem.
+
+           1. Bring in the thumsup & thumsdown symbols.
+           2. Make thumsup & thumsdown icons clickable.
+           3. Assign functions to thumsup & thumsdown and assign the default values to the span.
+           4. Create two global variables for holding the current values of thumsup & thumsdown.
+           5. Increment the global variables by 1 & update the value in UI.
+
+
+1. Task:
+
+Implement like and dislike where a user can do one like and one dislike.
+
+1. Get the thumsup & thumdown symbols code (search it google like "html thumbs up icon"):
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+2. Get font awesome
+
+<i class="fa fa-thumbs-up"></i>
+
+3. Change the font size if needed.
+
+4. Change the color if needed.
+
+5. Add javascript and create two empty functions.
+
+6. Add span tags with some breaks if needed (&nbsp;)
+
+7. Create two variable in script.
+
+8. Add id attributes in spam.
+
+
+9. Create document.getElementById("like_id").innerHTML=like;
+          document.getElementById("dislike_id").innerHTML=dislike;
+
+
+2. Task: Implement the login page, ask the user too enter username and password and
+      once the submits the buttom, then display the username and password on the UI.
+

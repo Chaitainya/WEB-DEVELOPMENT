@@ -1,0 +1,52 @@
+Control Statements::
+There are 3 types of control statements:
+
+
+1. Sequential
+
+We have 3 sequential Statements,
+
+1. if
+2. if-else &
+3. switch
+
+      In Sequenetial Statements. the control traverse from top to bottom.
+There will never be any change in the order of the excution.
+
+if:
+
+syntax:
+
+ if(test-condition){
+
+ }
+
+ test-condition result will always be boolean value.
+
+
+
+2. Iterative
+
+We have 3 Iterative Statements,
+
+1. While
+2. Do - While &
+3. for
+
+While:
+
+ Syntax:
+ 
+    while(test-condition){
+
+        // code
+
+    }
+
+
+
+3. Jump
+
+1. break
+2. continue &
+3. return

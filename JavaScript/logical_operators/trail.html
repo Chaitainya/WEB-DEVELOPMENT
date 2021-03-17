@@ -1,0 +1,36 @@
+<!-- Create a login page with username and password,
+
+If the username is incorrect, then print username is invalid or
+if the password is incorrect, then print password is incorrect. -->
+
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <form>
+
+            <lable> Username or Email: </lable><input type="text" id="useremail"> <br><br>
+            <lable> Password: </lable><input type="password" id="password"> <br><br>
+
+            <button onclick="validate()"> Submit</button>
+
+        </form>
+
+            <script>
+
+                function validate(){
+
+                    event.preventDefault();
+
+                    var username = document.getElementById("useremail").value;
+                    var password = document.getElementById("password").value;
+
+                    (username == "Leon" || username == "8121222266" || username == "leonrehan6@gmail.com") ? alert("Login Successful") : alert("Username Invalid");
+                    password == "leon123" ? alert("Login Successful") : alert("Password Invalid");
+
+            }
+            </script>
+    </body>
+</html>

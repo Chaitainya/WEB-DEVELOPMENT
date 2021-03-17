@@ -1,0 +1,75 @@
+
+
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <table id = "table" border = " 1">
+
+        </table>
+
+        <script>
+             
+             var products = [
+    {
+        id: 101,
+        name: "Product1",
+        brand: "Basics",
+        category: "category 90"
+    },
+     {
+        id: 102,
+        name: "Product2",
+        brand: "UCB",
+        category: "category 67"
+    },
+    {
+        id: 103,
+        name: "Product3",
+        brand: "Levis",
+        category: "category 04"
+    },
+    {
+        id: 104,
+        name: "Product4",
+        brand: "Crocs",
+        category: "category 31"
+    },
+    {
+        id: 105,
+        name: "Product5",
+        brand: "Fastrack",
+        category: "category 89"
+    }
+];
+
+             var columns = Object.keys(products[0]);
+
+             console.log(columns);
+
+             var tableH = "<tr>";
+
+                for(var i = 0; i < columns.length; i++)
+                {
+                    tableH = tableH + "<th>" + columns[i] + "</th>";
+                }
+                
+                console.log(tableH + "</tr>");
+
+             var tableB = "";
+
+                for(var j = 0; j < products.length; j++)
+                {
+                    var product = products[j];
+                    tableB = tableB + "<tr> <td>" + product.id + "</td>" + "<td>" + product.name + "</td>" + "<td>" + product.brand + "</td>" + "<td>" + product.category + "</td>" + "</tr>";
+                }
+
+                console.log(tableH + tableB);
+
+                document.getElementById("table").innerHTML = tableH + tableB;
+
+        </script>
+    </body>>
+</html>

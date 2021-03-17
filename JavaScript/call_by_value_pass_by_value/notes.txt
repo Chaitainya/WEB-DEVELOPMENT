@@ -1,0 +1,13 @@
+Call By Value:
+
+In Call By Value, only values will be passed as the arguments but not the references.
+
+eg: test.js (test.html was also created to debug)
+
+Pass By Reference:
+
+In Pass By Reference is applicable for arrays and objects.
+
+eg: test_2.js (example with array),
+    
+    test_3.js (example with object).

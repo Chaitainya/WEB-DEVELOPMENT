@@ -1,0 +1,51 @@
+<!-- Create a text field, let the user enter the date and submit it.
+create a function
+
+eg: date / month / year
+
+16/02/2021 - one week ego
+
+16/01/2021 - one month ego-->
+
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <form>
+
+            <input placeholder="enter date" type="text" id="date"><br><br>
+            <input placeholder="enter month" type="text" id="month"><br><br>
+            <input placeholder="enter year" type="text" id="year">
+
+         <button onClick="dateCheck()">Submit</button>
+
+        </form>
+        <script>
+
+            function dateCheck()
+            {
+                event.preventDefault();
+                var date = document.getElementById("date").value;
+                var month = document.getElementById("month").value;
+                var year = document.getElementById("year").value;
+
+                // var dateCheck = new Date;
+
+                if(date == "16" && month == "02" && year == "2021")
+                {
+                    alert(date + "/" + month + "/" + year + " one week ego");
+                }
+                if(date == "16" && month == "01" && year == "2021")
+                {
+                    alert(date + "/" + month + "/" + year + " one month ego");
+                }
+
+            }
+        
+        
+        </script>
+
+    </body>
+</html>

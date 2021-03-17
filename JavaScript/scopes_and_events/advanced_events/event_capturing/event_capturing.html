@@ -1,0 +1,50 @@
+<html>
+
+    <head>
+
+        <style>
+
+            body * {
+              margin: 10px;
+              border: 1px solid blue;
+            }
+
+          </style>
+
+    </head>
+    <body>
+
+        <form>FORM
+
+            <div>DIV
+
+              <p>P</p>
+
+            </div>
+
+          </form>
+
+          <script>
+
+              var paragraph = document.querySelector("p");
+              var form = document.querySelector("form");
+              var div = document.querySelector("div");
+
+              paragraph.addEventListener("click", function()
+              {
+                  alert("Paragraph called");
+              },{capture: true}) // if any event needs to be captured then we need to give a commamn and we need to specify capture to be true.
+
+              form.addEventListener("click", function()
+              {
+                  alert("form called");
+              },{capture: true})
+
+              div.addEventListener("click", function()
+              {
+                  alert("div called");
+              },{capture: true})
+
+          </script>
+    </body>
+</html>

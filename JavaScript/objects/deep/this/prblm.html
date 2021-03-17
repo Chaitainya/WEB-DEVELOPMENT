@@ -1,0 +1,65 @@
+<!-- We have a list of customers, display the customer information in the form of a table using JS. -->
+
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <table id = "table" border = " 1">
+
+        </table>
+
+        <script>
+             
+             var customers = [
+                 {
+                     id: 301,
+                     name: "Leon",
+                     address: "Hyderabad"
+                 },
+                 {
+                     id: 303,
+                     name: "Rehan",
+                     address: "Rajahmundry"
+                 },
+                 {
+                     id: 305,
+                     name: "Thomas",
+                     address: "Kakinada"
+                 },
+                 {
+                     id: 307,
+                     name: "Loki",
+                     address: "Tuni"
+                 }
+             ];
+
+             var columns = Object.keys(customers[0]);
+
+             console.log(columns);
+
+             var tableHead = "<tr>";
+
+                for(var i = 0; i < columns.length; i++)
+                {
+                    tableHead = tableHead + "<th>" + columns[i] + "</th>";
+                }
+                
+                console.log(tableHead + "</tr>");
+
+             var tableBody = "";
+
+                for(var j = 0; j < customers.length; j++)
+                {
+                    var customer = customers[j];
+                    tableBody = tableBody + "<tr> <td>" + customer.id + "</td>" + "<td>" + customer.address + "</td>" + "<td>" + customer.name + "</td> </tr>";
+                }
+
+                console.log(tableHead + tableBody);
+
+                document.getElementById("table").innerHTML = tableHead + tableBody;
+
+        </script>
+    </body>>
+</html>

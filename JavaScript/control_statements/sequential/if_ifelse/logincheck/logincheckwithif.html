@@ -1,0 +1,42 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <form>
+
+            Username: <input type="text" id="user"></input><br><br>
+            Password: <input type="password" id="pass"></input><br><br>
+
+            <button onclick="check()"> Submit </button>
+
+        </form>
+        <script>
+
+            function check()
+            {
+
+                var user_check = document.getElementById("user").value;
+                var pass_check = document.getElementById("pass").value;
+
+                if(user_check != "Leon")
+                {
+                    alert("username is incorrect");
+                }
+                if(pass_check != "Leon123")
+                {
+                    alert("password is incorrect");
+                }
+                else
+                {
+                    alert("Login Success")
+                }
+
+
+            }
+
+        </script>
+
+    </body>
+</html>

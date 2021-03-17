@@ -1,0 +1,10 @@
+Validations:
+
+There are 2 types of validations,
+
+1. Basic Validations &
+2. Advanced Validations
+
+1. Basic validations can be implemented using JS functions.
+
+2. Advancec validations can be implemented using regular expressions.

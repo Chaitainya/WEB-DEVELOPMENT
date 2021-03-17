@@ -1,0 +1,52 @@
+1. Create a registration form that should contain the following fields,
+
+username, password, mobile number, emailid, description (text area)
+
+once completed, show the details of the user in the user interface. (3 points).
+
+
+
+2. Create an application that displays the following content on UI in the form of a table.
+(7 points).
+
+var products = [
+    {
+        id: 101,
+        name: "Product1",
+        brand: "brand1",
+        category: "category 1"
+    }
+        {
+        id: 101,
+        name: "Product2",
+        brand: "brand1",
+        category: "category 1"
+    }
+        {
+        id: 101,
+        name: "Product3",
+        brand: "brand1",
+        category: "category 1"
+    }
+        {
+        id: 101,
+        name: "Product4",
+        brand: "brand1",
+        category: "category 1"
+    }
+        {
+        id: 101,
+        name: "Product5",
+        brand: "brand1",
+        category: "category 1"
+    }
+]
+
+id       name       brand       category
+101
+102
+103
+104
+.
+.
+.

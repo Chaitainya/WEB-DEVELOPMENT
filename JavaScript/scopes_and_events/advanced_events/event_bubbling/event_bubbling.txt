@@ -1,0 +1,4 @@
+Event Bubbling:
+It is the default process that happens in JS, where the child element's event is fired then automatically the parent event also get fired.
+
+note: The child & parent element events should be same.

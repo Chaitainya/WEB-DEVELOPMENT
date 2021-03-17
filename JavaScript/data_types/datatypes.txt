@@ -1,0 +1,16 @@
+Datatypes: 
+
+A datatype is used by the memory manager to provide the memory to some data based on its type.
+
+In JS, we cannot specify the datatype of a variable. Instead, based on the value stored in a variable, the datatype is confirmed.
+
+in JS, we have 5 Datatypes,
+
+1. String
+2. Number
+3. Object
+4. Arrays &
+5. Boolean
+
+Number: Any number, that could be decimal / Non-Decimal comes under number datatypes.
+

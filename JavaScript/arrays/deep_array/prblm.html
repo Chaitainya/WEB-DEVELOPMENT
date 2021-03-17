@@ -1,0 +1,81 @@
+<!-- implement a simple to do list with checkbox anf strikeoff affect using arrays. -->
+
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <form>
+
+        <input placeholder="Enter Task: " type="text" id="task"><br><br>
+        
+        <button onClick="addTask()"> Add </button>
+
+        </form>
+
+        <ul id="tasks">
+
+        </ul>
+
+        <script>
+
+            var allTasks = [];
+ 
+            function addTask()
+            {
+                event.preventDefault();
+                var task_value = document.getElementById("task").value;
+
+                var task = {
+                    taskId: 1,
+                    taskName: task_value
+                }
+
+                allTasks.push(task);
+                displayTasks();
+            }
+
+            function displayTasks(){
+                var tasks = document.getElementById("tasks");
+                tasks.innerHTML="";
+
+                allTasks.forEach(function(task)
+                {
+                    tasks.innerHTML += "<li>" + task.taskName + " &nbsp;&nbsp taskID:  " + task.taskId + "<input onclick='x("+ task.taskId+ ")' type='checkbox' id='cb'>" + "</li>";
+                })
+            }
+
+            function x(taskId)
+            {
+                event.preventDefault();
+                var checkBox = document.getElementById('cb');
+                console.log('taskId', taskId);
+
+                if(checkBox.checked == true)
+                {
+                    alert("Checked");
+
+                    console.log("BEFORE: allTasks", allTasks);
+
+                allTasks.forEach(function(task)
+                {
+                    if(task.taskId == taskId)
+                    {
+                        task.taskName = "<del>"+ task.taskName + "</del>";
+                    }
+                })
+
+                displayTasks();
+                console.log("AFTER: allTasks", allTasks);
+
+                }
+                else
+                {
+                    alert("unchecked");
+                }
+            }
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <form>
+
+<!-- These events expects a return value, because it returns false then it will not allow us to copy. If it is returning true, it will allow us to copy -->
+
+            <input oncopy="return checkCopy()" placeholder="password" type="text"><span id="copy"></span><br><br> 
+            <input onpaste="return checkPaste()" placeholder="confirm password" type="password"><span id="paste"></span><br><br>
+
+        </form>
+        <script>
+
+            function checkCopy()
+            {
+                document.getElementById("copy").innerHTML = " Cannot copy password";
+                return false;
+            }
+
+            function checkPaste()
+            {
+                document.getElementById("paste").innerHTML = " Cannot paste here";
+                return false;
+            }
+            
+        </script>
+    </body>
+</html>

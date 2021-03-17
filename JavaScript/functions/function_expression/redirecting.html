@@ -1,0 +1,105 @@
+<!-- Create a login page that contains mobile number, password and otp.
+
+The user enters the mobile number, password and otp. Then validate the given
+details using an account.
+
+Algorithm:
+
+1. Create text fields for mobile number, password and otp
+2. Take the values enter by the user in JS
+3. Validate the provided values against the actual values-->
+
+
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <form>
+
+            <input placeholder="Enter Mobile Number" type="number" id="num"></input><button onclick="createOTP()"> Get OTP </button><br><br>
+            <input placeholder="Enter OTP" type="text" id="otp"></input><br><br>
+            <input placeholder="Enter Password" type="password" id="pass"></input><br><br>
+
+            <button onClick="validate()"> Submit </button>
+
+        </form>
+        <script>
+
+            function createOTP()
+            {
+                event.preventDefault();
+
+                var mobile = document.getElementById("num").value;
+
+                if(mobile.length == 0)
+                {
+                    alert("Please Enter Mobile Number")
+                    return;
+                }
+                if(mobile != 8121222266)
+                {
+                    alert("Invalid Mobile Nubmer");
+                    return;
+                }
+                else
+                {
+                    alert("Your OTP is 1501");
+                    return;
+                }
+            
+            }
+
+            function validate()
+            {
+                event.preventDefault();
+
+                var password = document.getElementById("pass").value;
+                var otp = document.getElementById("otp").value;
+
+                if(otp.length == 0 && password.length == 0)
+                {
+                    alert("Fields Cannot Be Empty");
+                    return;
+                }
+
+                if(otp != "1501")
+                {
+                    alert("Invalid OTP");
+                    return;
+                }
+                if(password != "123")
+                {
+                    alert("Invalid Password");
+                    return;
+                }
+                else
+                {
+                    alert("Redirecting.......");
+                    redirect(true);
+                }
+
+            }
+
+
+
+            var redirect = function(result)
+            {
+                alert("You're going to redirect");
+
+                if(result == true)
+                {
+                    window.location.href="userhome.html";
+                    redirect = null;
+                }
+                else
+                {
+                    alert("Wrong Credentials");
+                    redirect = null;
+                }
+            }
+
+        </script>
+    </body>
+</html>

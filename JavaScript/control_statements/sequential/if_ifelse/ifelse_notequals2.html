@@ -1,0 +1,46 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <form>
+            <input placeholder="Enter Username" type="text" id="un"> <br><br>
+            <input placeholder="Enter Password" type="password" id="pass"> <br><br>
+
+            <button onclick="login()">Submit</button>
+
+        </form>
+
+        <script>
+
+            function login(){
+                event.preventDefault();
+
+                var username = document.getElementById("un").value;
+                var password = document.getElementById("pass").value;
+
+                if(username != "Leon" && password != "123")
+                {
+                    alert("Both password and username are incorrect");
+                    return;
+                }
+                if(username != "Leon")
+                {
+                    alert("Username didn't matched");
+                    return;
+                }
+                if(password != "123")
+                {
+                    alert("password didn't matched");
+                    return;
+                }
+                else
+                {
+                    alert("Huyaaaaa!!!! Login Success");
+                }
+
+            }
+        </script>
+    </body>
+</html>

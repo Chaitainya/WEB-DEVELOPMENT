@@ -1,0 +1,43 @@
+<!-- Create a form that should contain name, brand and price as text fields,
+
+when user click on the submit button, gather the values and store them in an
+function constructor object and display in the console.-->
+
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <form>
+
+            <input placeholder="Name of the product" type="text" id="name"></input><br><br>
+            <input placeholder="Band of the Product" type="text" id="brand"></input><br><br>
+            <input placeholder="Price of the product" type="text" id="price"></input><br><br>
+
+            <button onclick="details()"> Submit </button>
+
+        </form>
+        <script>
+
+            function details(             #
+            {
+                var name = document.getElementById("name").value;
+                var brand = document.getElementById("brand").value;
+                var price = document.getElementById("price").value;
+            }
+
+            function Details(name, brand, price)
+            {
+                this.name = name;
+                this.brand = brand;
+                this.price = price;
+            }
+
+            var product = new Details("PlayStation 5", "Sony", 50,000);
+
+            console.log(product);
+
+        </script>
+    </body>
+</html>

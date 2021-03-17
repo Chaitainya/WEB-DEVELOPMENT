@@ -1,0 +1,56 @@
+Javascript:
+
+1. JS is a scripting language which is used to provide dynamic nature to the web pages.
+
+2. JS is developed by Brendan Eich to support netscope navigator browser.
+
+3. initial name of JS was 'Livescript', later changed to Javascript.
+
+4. Java and Javascript are different technologies, there is no relationship between them.
+
+5. We use <script> tag to write JS Code in HTML files.
+  
+6. We can add <script> tag in <head> secion or in <body> section, depends on the situation.
+ 
+7. Google uses runtime engine called as V8 engine, which is also used by nodejs.
+
+
+
+Variabless:
+
+A variable is an Identifier which is used to refer some data.
+
+There are two types of variables in JaveScript
+
+1. Local Variable: A variable which is created inside a function is known as local variables.
+2. global Variable A variable which is created outside of the function is known as global variables.
+
+
+
+Syntax:
+
+  var var_name = value;
+
+  var age = 20;
+
+  var -> keyword
+  age -> variable name
+  20 -> data
+  
+
+
+Data -> Numbers, String, Boolean, Arrays & Objects
+
+Global variable values can be changed at any location in the application.
+
+Algorithm: //Look it for in html files//
+           A process or set of rules to be followed in calculations or other problem-solving operations, especially by a computer.
+
+           1. Bring in the thumsup & thumsdown symbols.
+           2. Make thumsup & thumsdown icons clickable.
+           3. Assign functions to thumsup & thumsdown and assign the default values to the span.
+           4. Create two global variables for holding the current values of thumsup & thumsdown.
+           5. Increment the global variables by 1 & update the value in UI.
+
+
+In JavaScript we don't have two types of numbers like int and float. We only one number that is number(0 to ∞)

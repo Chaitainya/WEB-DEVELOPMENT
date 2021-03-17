@@ -1,0 +1,30 @@
+<script>
+
+(function()
+{
+
+    var http = new XMLHttpRequest(); // XMLHttpRequest() is an 'object'
+
+    http.open("GET", "config.json");
+
+    // to 'GET' the data from "config.json" we use 'http.open'. "GET" is pre-defined method(function name).
+    // 'open' is the function which is available in 'http'. "open" is pre-defined.
+
+    http.send();
+
+    http.onreadystatechange = function() //treat "onreadystatechange"(property) as a pre-defined variable, but it is a pre-defined function or property
+    {
+        if(http.responseText != "")
+        {
+            initializeApp();
+        }
+    }
+
+})()
+
+function initializeApp()
+{
+    alert("App Initialized");
+}
+
+</script>

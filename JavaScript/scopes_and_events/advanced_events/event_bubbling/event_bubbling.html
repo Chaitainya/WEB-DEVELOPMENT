@@ -1,0 +1,50 @@
+<html>
+
+    <head>
+
+        <style>
+
+            body * {
+              margin: 10px;
+              border: 1px solid blue;
+            }
+
+          </style>
+
+    </head>
+    <body>
+
+        <form>FORM
+
+            <div>DIV
+
+              <p>P</p>
+
+            </div>
+
+          </form>
+
+          <script>
+
+              var paragraph = document.querySelector("p");
+              var form = document.querySelector("form");
+              var div = document.querySelector("div");
+
+              paragraph.addEventListener("click", function()    //There is one more way of adding an event dynamically, that is by adding "addEventListener()"
+              {
+                  alert("Paragraph called");
+                  event.stopPropagation();
+              })
+              form.addEventListener("click", function()
+              {
+                  alert("form called");
+              })
+              div.addEventListener("click", function()
+              {
+                  alert("div called");
+                  event.stopPropagation();
+              })
+
+          </script>
+    </body>
+</html>

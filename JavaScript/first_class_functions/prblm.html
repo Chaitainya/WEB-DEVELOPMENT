@@ -1,0 +1,50 @@
+<!-- Create a text field,
+
+username = ['ravi', "kiran", "rajesh"] -->
+
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <form>
+
+            <input placeholder="Username" type="text" id="user"></input><br><br>
+
+            <button onclick="usercheck()"> Submit </button>
+
+        </form>
+        <script>
+
+            function usercheck()
+            {
+                event.preventDefault();
+                var username = document.getElementById("user").value;
+
+            var usernames = ["Leon", "Rehan", "Thomas"]
+
+            var isUserFound = false;
+
+            usernames.forEach(function(name)
+            {
+                if(name == username)
+                {
+                    isUserFound = true;
+                }
+            })
+
+            if(isUserFound == true)
+            {
+                alert("Username already exits");
+            }
+            else
+            {
+                alert("Available");
+            }
+
+        }
+
+        </script>
+    </body>
+</html>

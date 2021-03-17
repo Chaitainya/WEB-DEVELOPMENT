@@ -1,0 +1,40 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <select id="cities" onchange="places()">
+
+            <option> Choose City </option>
+            <option value="Hyderabad"> Hyderabad </option>
+            <option value="Rajahmundry"> Rajahmundry </option>
+            <Option value="Tuni"> Tuni </Option>
+            <option value="Bangalore"> Balanglore </option>
+            <option value="Kerala"> Kerala </option>
+
+        </select>
+
+        <h1 id="cityinfo"></h1>
+
+        <script>
+
+            places();
+
+            function places()
+            {
+                var city = document.getElementById("cities").value;
+
+                switch(city)
+                {
+                    case "Hyderabad": document.getElementById("cityinfo").innerHTML = "Hyderabad is the capital and largest city of the Indian state of Telangana and the de jure capital of Andhra Pradesh"; break;
+                    case "Rajahmundry": document.getElementById("cityinfo").innerHTML = "Rajahmundry, officially known as Rajamahendravaram, is a city in the Indian state of Andhra Pradesh."; break;
+                    case "Tuni": document.getElementById("cityinfo").innerHTML = "Tuni is a town in East Godavari district of the Indian state of Andhra Pradesh."; break;
+                    case "Bangalore": document.getElementById("cityinfo").innerHTML = "Bangalore officially known as Bengaluru is the capital and the largest city of the Indian state of Karnataka."; break;
+                    case "Kerala": document.getElementById("cityinfo").innerHTML = "Kerala is a state on the southwestern Malabar Coast of India."; break;
+                }
+            }
+
+        </script>
+    </body>
+</html>

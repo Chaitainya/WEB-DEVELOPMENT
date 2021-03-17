@@ -1,0 +1,36 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <select id="city" onchange="places()">
+
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Secunderabad">Secunderabad</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Chennai">Chennai</option>
+
+        </select>
+
+        <h1 id="cityinfo"></h1>
+
+        <script>
+
+            places(); // This is to print the default hyderbad info.... without this we need to click hyderabad again
+
+            function places(){
+
+            var city = document.getElementById("city").value;
+            
+            switch(city){
+                case "Hyderabad": document.getElementById("cityinfo").innerHTML = "Charminar, Ramoji Film City, Birla Mandir"; break;
+                case "Secunderabad": document.getElementById("cityinfo").innerHTML = "Temple, Clock Tower"; break;
+                case "Bangalore": document.getElementById("cityinfo").innerHTML = "Majestic, IT"; break;
+                case "Chennai": document.getElementById("cityinfo").innerHTML = "Beach, Fish"; break;
+            }
+        }
+
+        </script>
+    </body>
+</html>

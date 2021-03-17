@@ -1,0 +1,26 @@
+IIFE:
+
+" Immediately Invoked Function Expression "
+
+--> If the function gets invoked by itself, immediately right after its declaration,
+    then it is called as "IIFE".
+
+syntax:
+
+    function()
+    {
+
+    }() --> ' IIFE '
+
+" () --> IIFE "
+
+-
+-
+
+Where do we use?
+
+whenever we want to create a function that should automatically called only once
+through out application, then we use IIFE.
+
+1. To load configuration information
+2. To load data form different data sources(database, files etc)

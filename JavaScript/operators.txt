@@ -1,0 +1,14 @@
+Operators:
+
+An Operator is a keyword or a symbol that provides a functionality.
+
+eg:   + operator is used to add two or more numbers and also can be used to perform concatenation of two or more strings.
+
+Arithmetic Operators:
+
++, -, *, /, %, ++, --
+
+++ is used to increment a variables value by 1.
+
+-- is used to decrement a variables value by 1.
+

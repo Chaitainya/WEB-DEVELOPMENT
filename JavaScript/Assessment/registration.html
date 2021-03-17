@@ -1,0 +1,51 @@
+<!-- by an array -->
+
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <h1>Registration Form</h1>
+
+        <ul id="result">
+
+        </ul>
+
+        <script>
+
+            var details = [
+                {
+                    username: "Leon",
+                    password: "123",
+                    mobile: "8121222266",
+                    emailid: "leon@gmail.com"
+                },
+                {
+                    username: "Rehan",
+                    password: "123",
+                    mobile: "6304708865",
+                    emailid: "rehan@gmail.com"
+                },
+                {
+                    username: "Thomas",
+                    password: "123",
+                    mobile: "7032776953",
+                    emailid: "thomas@gmail.com"
+                }
+            ];
+
+            var result = document.getElementById("result");
+
+            for(var i = 0; i < details.length; i++){
+
+                var info = details[i];
+
+                result.innerHTML = result.innerHTML + "<li>" + "Your username is " + info.username + "&nbsp&nbsp&nbsp&nbsp" + " Password is " + info.password + "&nbsp&nbsp&nbsp&nbsp" + " Mobile number is " + info.mobile + "&nbsp&nbsp&nbsp&nbsp" + " and the Email ID is " + info.emailid + "</li>";
+
+            }
+
+        </script>
+
+    </body>
+</html>

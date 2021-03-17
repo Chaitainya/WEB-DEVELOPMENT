@@ -1,0 +1,36 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <img id="image" onmouseover="zoom()" onmouseout="unZoom()" src="fast.jpg" width="400px" height="600px">
+
+        <script>
+
+        var image = document.getElementById("image").style; // we use here because to use this line as global.
+
+            function zoom()
+            {
+
+                // whenever we'd like to apply css dynamically, we've to use " .style "
+                // image.style.width="430";
+                // image.style.height="210";
+                // or add style at global document.getElementById("image").style
+
+                image.width="405";
+                image.height="605"
+
+            }
+
+            function unZoom()
+            {
+
+                image.width="400";
+                image.height="600"
+
+            }
+        </script>
+
+    </body>
+</html>

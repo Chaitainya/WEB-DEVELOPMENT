@@ -1,0 +1,29 @@
+<body>
+
+    <form>
+
+        <input placeholder="username" type="text" id="user"><br><br>
+        <input placeholder="Password" type="text" id="pass"><br><br>
+
+        <button id="button"> Submit </button>
+        
+    </form>
+    <script>
+
+        var button = document.getElementById("button"); // querySelector is an function, which is used to get the reference of any kind of element.
+        console.log(button);
+
+        button.onclick = function()
+        {
+
+            event.preventDefault();
+
+            var user = document.getElementById("user").value;
+            var pass = document.getElementById("pass").value;
+
+            console.log(user);
+            console.log(pass);
+        }
+
+    </script>
+</body>

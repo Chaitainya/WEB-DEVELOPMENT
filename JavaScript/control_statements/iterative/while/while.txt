@@ -1,0 +1,19 @@
+while:
+
+syntax:
+
+  while(test-condition){
+
+      //code
+  }
+
+  if the test test condition is true, it'll execute the code.
+  if not it will iterate till the condition is true.
+
+  the best time to use while is, when we have a list of items
+
+  if we don't know the no.of iterations we will with "while".
+  if we know, we'll go with "for"
+
+  whatever we can do with while, we can also do with for.
+  whatever we can do with for, we can also do with while.

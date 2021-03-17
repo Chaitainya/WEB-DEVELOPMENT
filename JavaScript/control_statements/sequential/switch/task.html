@@ -1,0 +1,38 @@
+<!-- Create a drop down list of menu (5 items), based on the user selection, display the information of the respective item such as price, brand etc-->
+
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <select id="game" onchange="games()">
+
+            <option value="GTA V">GTA V</option>
+            <option value="GTA IV">GTA IV</option>
+            <option value="GTA San Andreas">GTA San andreas</option>
+            <option value="GTA Vice City">GTA Vice City</option>
+
+        </select>
+
+        <h1 id ="gamesinfo"></h1>
+
+        <script>
+
+            games();
+
+            function games(){
+
+                var game = document.getElementById("game").value;
+
+                switch(game){
+                    case "GTA V": document.getElementById("gamesinfo").innerHTML = "Launched September 17th 2013, $44.99 US Dollors, 5,310 Indian Rupees, Available in Windows,Playstation 3, Playstation 4, Xbox One, Xbox 360;"; break;
+                    case "GTA IV": document.getElementById("gamesinfo").innerHTML = "Launched April 29th 2008, $5.99 US Dollors, 1,999 Indian Rupees, Available in Windows, Playstation 3, Xbox 360"; break;
+                    case "GTA San Andreas": document.getElementById("gamesinfo").innerHTML = "Launched October 26th 2004, $2.59 US Dollors, 190 Indian Rupees, Available in Windows, Playstation 4"; break;
+                    case "GTA Vice City": document.getElementById("gamesinfo").innerHTML = "Launched October 27th 2002, $2.05 US Dollors, 150 Indian Rupees, Available in Android, PlayStation 2, Microsoft Windows, PlayStation 4, PlayStation 3, iOS, Xbox, macOS, Fire OS";
+                }
+            }
+
+        </script>
+    </body>
+</html>

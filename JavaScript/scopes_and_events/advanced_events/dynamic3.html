@@ -1,0 +1,39 @@
+<body>
+
+    <form>
+
+        <input placeholder="username" onchange="usernamevalue()" type="text" id="user"><br><br>
+
+        <button id="button"> Submit </button>
+
+    </form>
+    <script>
+
+        var button = document.getElementById("button");
+
+        function usernamevalue()
+        {
+            event.preventDefault();
+
+            var username = document.getElementById("user").value;
+
+            if(username == "customer")
+            {
+                button.onclick = customer;
+            }
+            else
+            {
+                button.onclick = admin;
+            }
+        }
+        function customer()
+        {
+            alert("customer login...");
+        }
+        function admin()
+        {
+            alert("admin login...");
+        }
+
+    </script>
+</body>

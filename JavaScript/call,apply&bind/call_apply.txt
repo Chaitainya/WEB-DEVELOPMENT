@@ -1,0 +1,7 @@
+____.____.call(____,"____","____");
+
+In call function you can pass individual parameters.
+
+____.____.apply(____,["____","____"]);
+
+In apply function you cannot pass individual parameters, but you can pass by passing parameters in an array.

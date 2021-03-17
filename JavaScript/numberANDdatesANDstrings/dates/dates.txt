@@ -1,0 +1,6 @@
+Date:
+
+JS provide predefined data object which is used to store the data
+according to the required format.
+
+JS provides Data constructor to create date.

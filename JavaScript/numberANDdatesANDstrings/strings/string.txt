@@ -1,0 +1,5 @@
+String:
+
+A String is a collection of characters enclosed in double or single quotes.
+
+var str = "hello" or var str = 'hello'

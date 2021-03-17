@@ -1,0 +1,56 @@
+<!--by user input -->
+
+
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <h1> Registration Form </h1>
+
+        <ul id="result">
+
+
+        </ul>
+
+        <form>
+
+            <input placeholder="Username" id="user"><br><br>
+            <input placeholder="Password" id="pass"><br><br>
+            <input placeholder="mobile" id="mobile"><br><br>
+            <input placeholder="EmailID" id="email"><br><br>
+
+            <button onclick="click()"> Submit </button>
+        
+        </form>
+        <script>
+
+            function click( #
+            {
+                var username = document.getElementById("user").value;
+                var password = document.getElementById("pass").value;
+                var mobile = document.getElementById("mobile").value;
+                var email = document.getElementById("email").value;
+            }
+
+            var userDetails = [
+                {
+                    username: "user",
+                    password: "pass",
+                    mobile: "mobile",
+                    email: "email"
+                }
+            ];
+
+            var result = document.getElementById("result");
+
+            for(var i = 0; i < userDetails.length; i++)
+            {
+                var user = userDetails[i];
+                result.innerHTML = result.innerHTML + "<li>" + user.username + user.password + user.mobile + user.email + "</li>";
+            }
+        </script>
+
+    </body>
+</html>

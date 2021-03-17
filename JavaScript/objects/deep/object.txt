@@ -1,0 +1,27 @@
+Object:
+
+In JS, we create an object to store the information of a specific entity.
+
+syntax:
+
+var obj = {
+    key: value
+}
+
+keys should be strings and should be unique.
+
+values can be of any type and need not to be unique.
+
+
+If we want to share data from client to server or vice versa, we wrap the data in objects and share.
+
+
+--> We can create an object in multiple ways,
+
+1, {key: value}
+
+2, using function Constructor and
+
+3, create
+
+create: If we want to create a new object from existing object, then use create.
