@@ -1,0 +1,33 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form>
+            <input placeholder="Password" type="text" id="pass"> <span id="passMsg"></span> <br><br>
+
+            <button onclick="passCheck()">submit</button>
+        </form>
+        <script>
+            function passCheck()
+            {
+
+
+                event.preventDefault();
+
+
+                var pass = document.getElementById("pass").value;
+                var pattern = /(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*[\W])[\w\W]{8,}/;
+                
+                if(pattern.test(pass))
+                {
+                    document.getElementById("passMsg").innerHTML="Password Accepted";
+                }
+                else
+                {
+                    document.getElementById("passMsg").innerHTML="Password Not Accepted";
+                }
+            }
+        </script>
+    </body>
+</html>

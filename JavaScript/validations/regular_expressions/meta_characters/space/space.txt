@@ -1,0 +1,3 @@
+\s - white space
+
+\S - non white space

@@ -1,0 +1,7 @@
+Brackets:
+
+syntax:
+
+    [abc]: --> whatever we pass inside the brackets it follows 'or' condition
+
+    eg: a or b or c

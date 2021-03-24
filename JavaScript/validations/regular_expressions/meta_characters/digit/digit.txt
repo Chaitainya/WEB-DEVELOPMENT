@@ -1,0 +1,4 @@
+
+\d digit
+
+\D capital "D" is opp of small 'd'
