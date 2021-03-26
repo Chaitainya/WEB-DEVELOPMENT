@@ -1,0 +1,4 @@
+
+Error()
+
+Creates a new Error object.

@@ -1,0 +1,11 @@
+Finally Block:
+
+Irrespective of the error, the following block will be executed.
+
+syntax
+
+finally{
+    code
+}
+
+The finally block should be followed by try or catch blocks.

@@ -1,0 +1,26 @@
+Whenever an error occurs, the execution of the code stops
+i.e, the program terminates abnormally without
+executing the next lines of code.
+
+Q. What is error handling is?
+A. Error handling is the process of skipping the line of code,
+   which raises an error and continue executing the next lines of code.
+   It is our responsbility to see if they're any errors occur, then that particular error or more should be skipped,
+   then the remaining lines of the code must be executed.
+
+Q. How do we handle the errors?
+A. Concept of trycatch mechanism.
+
+We achieve error handling using try and catch blocks
+
+try{
+    //code
+}
+
+whichever the code that could raise an error should be kept in try block.
+
+catch block will handle the error and helps in continuation of execution of other lines of code.
+
+catch(error){
+    write code for displaying error message
+}
