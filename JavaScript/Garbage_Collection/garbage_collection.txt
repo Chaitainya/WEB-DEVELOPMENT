@@ -1,0 +1,11 @@
+Garbage Collection:
+
+Garbage Collection is the procedure of removing unwanted/unused
+data from the memory.
+
+Runtime engine uses garbage collector to collect the garbage form
+the memory.
+
+Any unreferenced objects found in the memory will be treated as
+garbage and garbage collector uses mark and sweep algorithm to remove
+the garbage from the memory.
