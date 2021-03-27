@@ -1,0 +1,29 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <form>
+
+            Username <input type="text" id="user" name="Username"><br><br>
+
+            Password <input type="password" id="pass" name="Password"><br><br>
+
+            <button onclick=login()>check</button>
+
+        </form>
+        <script>
+
+            function login()
+            {
+
+                event.preventDefault();
+
+                var user = document.getElementsByName("username");
+
+                console.log(user); // getElementByName will give us an array
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+    <head></head>
+    <body>
+        <form>
+            <h1>This is heading</h1>
+            <h1 onclick="remove()">This is another heading</h1>
+        </form>
+        <script>
+            var h1 = document.querySelector("h1");
+            h1.addEventListener("click", add);
+            function add()
+            {
+                h1.style.color="red";
+                h1.style.backgroundColor="black";
+            }
+            function remove()
+            {
+                h1.removeEventListener("click", add); // we wrote this in a function, because it should call based on the user action.
+            }
+        </script>
+    </body>
+</html>

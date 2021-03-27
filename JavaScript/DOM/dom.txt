@@ -1,0 +1,13 @@
+DOM:
+
+--> DOM stands for Document Object Model.
+--> The main use of DOM is to make the static web pages to dynamic, so we use DOM>
+--> Every HTML element will be converted into an object inside DOM.
+
+Methods:
+
+1. getElementByID(),
+2. getElementByName(),
+3. getElementsByTagName(),
+4. querySelector() &
+5. querySelectorAll()

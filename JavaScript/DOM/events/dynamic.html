@@ -1,0 +1,35 @@
+<html>
+    <head></head>
+
+    <body id="body">
+    </body>
+
+    <script>
+
+        var body = document.getElementById("body");
+        var form = document.createElement("form");
+        console.log(form);
+
+        var username = document.createElement("input");
+        username.type="text";
+        username.placeholder="enter the username";
+        username.id="user";
+        console.log(username);
+
+        var password = document.createElement("input");
+        password.type="password";
+        password.placeholder="enter the passoword";
+        password.id="pass";
+        console.log(password);
+
+        // now we need to add above username and password to form
+
+        form.appendChild(username);
+        form.appendChild(password);
+
+        // now the form should be append to body
+
+        body.appendChild(form);
+
+    </script>
+</html>

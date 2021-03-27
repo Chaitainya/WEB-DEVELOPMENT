@@ -1,0 +1,26 @@
+<html>
+    <head></head>
+    <body>
+        <h1>This is h1</h1>
+
+        <script>
+            var html = document.querySelector('html');
+            // console.log(html);
+
+            // console.log(html.firstChild);
+            // console.log(html.lastChild);
+
+            var head = html.firstChild;
+            // console.log(head.nextSibling);
+            var text = head.nextSibling;
+            // console.log(text.nextSibling);
+            var body = text.nextSibling;
+            // console.log(body.firstChild);
+            var h1 = body.firstChild;
+            console.log(h1.nextSibling);
+
+            // if we want to do in reverse, we can can use "previousSibling"
+
+        </script>
+    </body>
+</html>
