@@ -1,0 +1,40 @@
+<!-- Create a form that takes name, address, ceo and once the user submits,
+incorporate these values into the template. -->
+
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Please enter the details to send message</h1>
+        <form>
+            <input placeholder="Company Name" type="text" id="name"><br><br>
+            <input placeholder="Address" type="text" id="add"><br><br>
+            <input placeholder="CEO" type="text" id="ceo"><br><br>
+
+            <button onclick="details()">submit</button>
+        </form>
+        <script>
+
+            function details()
+            {
+                event.preventDefault();
+            var CEO = "Leon";
+            var name = document.getElementById("name").value;
+            var add = document.getElementById("add").value;
+            var ceo = document.getElementById("ceo").value;
+
+            console.log(`
+            Hello ${ceo},
+            
+            We are reaching your company ${name} at location ${add}
+            
+            Thanks,
+            ${CEO}`)
+
+            }
+
+        </script>
+    </body>
+</html>

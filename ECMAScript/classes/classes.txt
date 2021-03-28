@@ -1,0 +1,10 @@
+Classes:
+In object oriented programming, a class is used to represent a template that refers
+to any real time entities.
+
+syntax:
+
+class classmate{
+    variables;
+    methods;
+}

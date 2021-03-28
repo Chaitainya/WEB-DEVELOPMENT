@@ -1,0 +1,12 @@
+ES6:
+
+ECMAScript 6 is the next version of JavaScript -v5.
+The full form of ECMA is European Computer Manufacturer's Association.
+
+Variables:
+
+In ES6, we can create 3 types of variables,
+
+1. var - local and global variables
+2. let - Used to create a variable specific to the block.
+3. const - To create constants.

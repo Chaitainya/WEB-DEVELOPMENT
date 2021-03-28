@@ -1,0 +1,12 @@
+The difference between function and function Generator is
+function Generator will have an astisks " * "
+
+eg: 
+
+function f1(){
+    console.log("normal function");
+}
+
+function* f1(){
+    console.log("function Generator");
+}

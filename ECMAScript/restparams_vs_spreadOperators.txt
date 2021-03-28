@@ -1,0 +1,4 @@
+The difference between spread operators and rest parameters is
+
+--> rest parameters will use when we're creating a function, rest parameters will store the arguments.
+--> spread operator if we an array it is going to spread it into individual values.

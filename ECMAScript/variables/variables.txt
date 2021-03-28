@@ -1,0 +1,5 @@
+In ES6, we can create 3 types of variables,
+
+1. var - local and global variables
+2. let - Used to create a variable specific to the block.
+3. const - To create constants.
