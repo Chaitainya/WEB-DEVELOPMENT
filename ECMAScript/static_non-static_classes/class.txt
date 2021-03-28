@@ -1,0 +1,5 @@
+A class contains static and non-static variables/methods.
+
+Static variables and Static methods will be under class i.e, can be called using class
+
+Non-Static variables/methods can be accessed using objects.
